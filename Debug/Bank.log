@@ -1,2 +1,17 @@
 ﻿  Bank.cpp
+D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP\Bank\clsString.h(35,1): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP\Bank\clsString.h(56,21): warning C4018: '<': signed/unsigned mismatch
+D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP\Bank\clsString.h(68,21): warning C4018: '<': signed/unsigned mismatch
+D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP\Bank\clsString.h(81,23): warning C4018: '<': signed/unsigned mismatch
+D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP\Bank\clsString.h(100,23): warning C4018: '<': signed/unsigned mismatch
+D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP\Bank\clsString.h(169,1): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP\Bank\clsString.h(194,1): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP\Bank\clsString.h(226,1): warning C4267: 'initializing': conversion from 'size_t' to 'short', possible loss of data
+D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP\Bank\clsString.h(242,1): warning C4267: 'initializing': conversion from 'size_t' to 'short', possible loss of data
+D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP\Bank\clsString.h(247,1): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP\Bank\clsString.h(258,23): warning C4018: '<': signed/unsigned mismatch
+D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP\Bank\clsDate.h(121,1): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP\Bank\clsBankClient.h(362,11): warning C4129: 'A': unrecognized character escape sequence
+D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP\Bank\clsBankClient.h(406,11): warning C4129: 'D': unrecognized character escape sequence
+D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP\Bank\clsBankClient.h(37,41): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
   Bank.vcxproj -> D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP\Debug\Bank.exe

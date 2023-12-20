@@ -142,7 +142,12 @@
     <ClCompile Include="Bank.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\mycomponent.h" />
+    <ClInclude Include="clsBankClient.h" />
+    <ClInclude Include="clsDate.h" />
+    <ClInclude Include="clsInputValidate.h" />
+    <ClInclude Include="clsPerson.h" />
+    <ClInclude Include="clsString.h" />
+    <ClInclude Include="clsUtility.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
