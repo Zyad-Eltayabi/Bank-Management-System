@@ -110,7 +110,7 @@ public:
 				return s;
 			}
 		}
-	}
+	};
 
 	vector <string> SplitString(string S1, string delim)
 	{

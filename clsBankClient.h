@@ -127,7 +127,7 @@ private:
 		MyFile.open(_ClinetsFileName(), ios::out);
 		if (MyFile.is_open())
 		{
-			for (string &ClientLine : vClientsDateLine)
+			for (string& ClientLine : vClientsDateLine)
 			{
 				MyFile << ClientLine << endl;
 			}
@@ -195,19 +195,19 @@ public:
 		return _Mode == enMode::EmptyMode;
 	}
 
-	void Print()
-	{
-		cout << "\nClinet Card :";
-		cout << "\n___________________";
-		cout << "\nFirstName    : " << FirstName;
-		cout << "\nLastName     : " << LastName;
-		cout << "\nFull Name    : " << FullName();
-		cout << "\nEmail        : " << Email;
-		cout << "\nAcc Number    : " << _AccountNumber;
-		cout << "\nPassword      : " << _PinCode;
-		cout << "\nBalance       : " << _AccountBalance;
-		cout << "\n___________________\n";
-	}
+	//void Print()
+	//{
+	//	cout << "\nClinet Card :";
+	//	cout << "\n___________________";
+	//	cout << "\nFirstName    : " << FirstName;
+	//	cout << "\nLastName     : " << LastName;
+	//	cout << "\nFull Name    : " << FullName();
+	//	cout << "\nEmail        : " << Email;
+	//	cout << "\nAcc Number    : " << _AccountNumber;
+	//	cout << "\nPassword      : " << _PinCode;
+	//	cout << "\nBalance       : " << _AccountBalance;
+	//	cout << "\n___________________\n";
+	//}
 
 	static clsBankClient Find(string AccountNumber)
 	{
@@ -358,132 +358,11 @@ public:
 		return clsBankClient(enMode::AddNewMode, "", "", "", "", AccountNumber, "", 0);
 	}
 
-	void  AddNewClient()
-	{
-		cout << "\n\Add New Client : ";
-		cout << "\n______________________\n";
-		string AccountNumber = "";
-		cout << "\nPlease Enter your Account Number : ";
-		AccountNumber = clsInputValidate::ReadString();
-		while (clsBankClient::IsClientExist(AccountNumber))
-		{
-			cout << "\nAccount Number is already used, choose another one : ";
-			AccountNumber = clsInputValidate::ReadString();
-		}
-
-		clsBankClient NewClient = GetAddNewClientObject(AccountNumber);
-
-		ReadClientInfo(NewClient);
-
-		clsBankClient::enSaveResults SaveResult;
-		SaveResult = NewClient.Save();
-		switch (SaveResult)
-		{
-		case clsBankClient::enSaveResults::svSucceeded:
-			cout << "\nAccount Added Successfully . \n";
-			NewClient.Print();
-			break;
-		case  clsBankClient::enSaveResults::svFaildEmptyObject:
-			cout << "\nError account was not Added because it's empty";
-			break;
-		case clsBankClient::enSaveResults::svFaildAccountNumberExists:
-			cout << "\nFaild Account Number Already Exists";
-			break;
-		default:
-			break;
-		}
-	}
-
-
 	/*===================  Delete Client ==========================*/
 
 	static clsBankClient DeleteClientObject(string AccountNumber)
 	{
 		return clsBankClient(enMode::DeleteMode, "", "", "", "", AccountNumber, "", 0);
-	}
-
-	void DeleteClient()
-	{
-		cout << "\n\Delete Client : ";
-		cout << "\n______________________\n";
-		string AccountNumber = "";
-		cout << "\nPlease Enter your Account Number : ";
-		AccountNumber = clsInputValidate::ReadString();
-		while (!clsBankClient::IsClientExist(AccountNumber))
-		{
-			cout << "\nAccount Number is not found , choose another one : ";
-			AccountNumber = clsInputValidate::ReadString();
-		}
-
-		clsBankClient Client1 = clsBankClient::Find(AccountNumber);
-		Client1.Print();
-
-		char Delete = 'y';
-		cout << "\nDo you want to delete this client ? ";
-		cin >> Delete;
-
-		if (toupper(Delete) == 'Y')
-		{
-			Client1 = DeleteClientObject(AccountNumber);
-			clsBankClient::enSaveResults SaveResult;
-			SaveResult = Client1.Save();
-			switch (SaveResult)
-			{
-			case clsBankClient::enSaveResults::svSucceeded:
-				cout << "\nAccount Deleted Successfully . \n";
-				break;
-			case  clsBankClient::enSaveResults::svFaildEmptyObject:
-				cout << "\nError account was not  saved because it's empty";
-				break;
-			case clsBankClient::enSaveResults::svFaildAccountNumberExists:
-				cout << "\nFaild Account Number Already Exists";
-				break;
-			default:
-				break;
-			}
-		}
-	}
-
-	/*=================== Show Clients List ==========================*/
-	void PrintClientRecordLine(clsBankClient Client)
-	{
-		cout << "| " << setw(15) << left << Client.GetAccountNumber();
-		cout << "| " << setw(20) << left << Client.FullName();
-		cout << "| " << setw(12) << left << Client.Phone;
-		cout << "| " << setw(30) << left << Client.Email;
-		cout << "| " << setw(10) << left << Client.PinCode;
-		cout << "| " << setw(12) << left << Client.AccountBalance;
-	}
-
-	void ShowClientsList()
-	{
-		vector <clsBankClient> vClients = _LoadClientsDataFromFile();
-		cout << "\n\t\t\t\t\tClient List (" << vClients.size() << ") Client(s).";
-		cout << "\n_____________________________________________________________";
-		cout << "_______________________________________________\n" << endl;
-
-		cout << "| " << left << setw(15) << "Accout Number";
-		cout << "| " << left << setw(20) << "Client Name";
-		cout << "| " << left << setw(12) << "Phone";
-		cout << "| " << left << setw(30) << "Email";
-		cout << "| " << left << setw(10) << "Pin Code";
-		cout << "| " << left << setw(12) << "Balance";
-		cout << "\n___________________________________________________________________";
-		cout << "_________________________________________\n" << endl;
-
-		if (vClients.size() == 0)
-			cout << "\t\t\t\tNo Clients Available In the System!";
-		else
-
-			for (clsBankClient Client : vClients)
-			{
-
-				PrintClientRecordLine(Client);
-				cout << endl;
-			}
-
-		cout << "\n___________________________________________________________________";
-		cout << "_________________________________________\n" << endl;
 	}
 
 	/*=================== Total Balances ==========================*/
@@ -544,5 +423,23 @@ public:
 		cout << "_________________________________________\n" << endl;
 		cout << "\t\t\t\t\t   Total Balances = " << TotalBalances << endl;
 		cout << "\t\t\t\t\t   ( " << clsUtil::NumberToText(TotalBalances) << ")";
+	}
+
+	/*=================== Deposite and Withdraw ==========================*/
+	void Deposit(float Amount)
+	{
+		_AccountBalance += Amount;
+		Save();
+	}
+
+	bool Withdraw(float Amount)
+	{
+		if (Amount > _AccountBalance)
+			return false;
+		else
+		{
+			_AccountBalance -= Amount;
+			Save();
+		}
 	}
 };

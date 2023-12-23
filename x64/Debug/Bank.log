@@ -6,10 +6,12 @@ D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP
 D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP\Bank\clsString.h(242,1): warning C4267: 'initializing': conversion from 'size_t' to 'short', possible loss of data
 D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP\Bank\clsString.h(247,1): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
 D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP\Bank\clsDate.h(121,1): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
-D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP\Bank\clsUtility.h(67,1): warning C4102: 'defualt': unreferenced label
-D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP\Bank\clsBankClient.h(363,11): warning C4129: 'A': unrecognized character escape sequence
-D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP\Bank\clsBankClient.h(407,11): warning C4129: 'D': unrecognized character escape sequence
+D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP\Bank\clsUtility.h(64,1): warning C4102: 'defualt': unreferenced label
 D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP\Bank\clsBankClient.h(38,41): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP\Bank\clsBankClient.h(504,10): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP\Bank\clsBankClient.h(546,54): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP\Bank\clsBankClient.h(383,10): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP\Bank\clsBankClient.h(425,54): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP\Bank\clsWithdrawScreen.h(26,21): warning C4129: 'W': unrecognized character escape sequence
+D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP\Bank\clsTotalBalancesScreen.h(57,82): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP\Bank\clsBankClient.h(297): warning C4715: 'clsBankClient::Save': not all control paths return a value
+D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP\Bank\clsBankClient.h(444): warning C4715: 'clsBankClient::Withdraw': not all control paths return a value
   Bank.vcxproj -> D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP\x64\Debug\Bank.exe
