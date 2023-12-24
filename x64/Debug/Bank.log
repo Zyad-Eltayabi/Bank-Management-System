@@ -13,5 +13,6 @@ D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP
 D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP\Bank\clsWithdrawScreen.h(26,21): warning C4129: 'W': unrecognized character escape sequence
 D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP\Bank\clsTotalBalancesScreen.h(57,82): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
 D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP\Bank\clsBankClient.h(297): warning C4715: 'clsBankClient::Save': not all control paths return a value
+D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP\Bank\clsUser.h(308): warning C4715: 'clsUser::Save': not all control paths return a value
 D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP\Bank\clsBankClient.h(444): warning C4715: 'clsBankClient::Withdraw': not all control paths return a value
   Bank.vcxproj -> D:\Programming\C++\11 - OOP as it Should Be (Applications)\Bank System Using OPP\x64\Debug\Bank.exe
