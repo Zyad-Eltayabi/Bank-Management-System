@@ -22,7 +22,7 @@ private:
             if (Trials == 0)
             {
                 cout << "\n\nYou have locked after 3 failed trials\n";
-                //return;
+                return;
             }
 
             if (LoginFaild)
