@@ -15,17 +15,25 @@ private:
     static  void _Login()
     {
         bool LoginFaild = false;
-
+        short Trials = 3;
         string Username, Password;
         do
         {
+            if (Trials == 0)
+            {
+                cout << "\n\nYou have locked after 3 failed trials\n";
+                //return;
+            }
 
             if (LoginFaild)
             {
-                cout << "\nInvlaid Username/Password!\n\n";
+                cout << "\nInvlaid Username/Password!\n";
+                cout << "You  have " << Trials << " to login." << endl;
             }
 
-            cout << "Enter Username? ";
+            Trials--;
+
+            cout << "\nEnter Username? ";
             cin >> Username;
 
             cout << "Enter Password? ";
