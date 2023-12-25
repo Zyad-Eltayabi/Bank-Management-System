@@ -3,6 +3,7 @@
 #include <iomanip>
 #include "clsUser.h"
 #include "Global.h"
+#include "clsAddDate.h"
 using namespace std;
 
 class clsScreen
@@ -17,9 +18,10 @@ protected:
         {
             cout << "\n\t\t\t\t\t  " << SubTitle << endl;
         }
-        //cout << "\n\t\t\t\t\t______________________________________\n\n";
         cout <<  right << setw(82) << "___________________________________________\n\n";
 
+        cout << right << setw(45) << "User : " << clsAddDate::LoggedCurrentUser() << endl;
+        cout << right << setw(48) << clsAddDate::GetDate() << "\n\n ";
     }
 
     static bool CheckAccessRights(clsUser::enPermissions Permission)
