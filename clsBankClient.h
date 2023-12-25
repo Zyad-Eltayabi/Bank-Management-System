@@ -442,4 +442,10 @@ public:
 			Save();
 		}
 	}
+
+	void Transfer(clsBankClient& ClientToTransferTo, float TransferAmount)
+	{
+		cout << Withdraw(TransferAmount);
+		ClientToTransferTo.Deposit(TransferAmount);
+	}
 };
