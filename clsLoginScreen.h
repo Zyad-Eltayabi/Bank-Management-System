@@ -1,11 +1,12 @@
 #pragma once
 
+#include "Global.h"
 #include <iostream>
 #include "clsScreen.h"
 #include "clsUser.h"
 #include <iomanip>
 #include "clsMainScreen.h"
-#include "Global.h"
+#include "clsDate.h"
 
 class clsLoginScreen :protected clsScreen
 {
@@ -17,12 +18,13 @@ private:
         bool LoginFaild = false;
         short Trials = 3;
         string Username, Password;
+
         do
         {
             if (Trials == 0)
             {
                 cout << "\n\nYou have locked after 3 failed trials\n";
-                //return;
+                return;
             }
 
             if (LoginFaild)
@@ -44,6 +46,9 @@ private:
             LoginFaild = CurrentUser.IsEmpty();
 
         } while (LoginFaild);
+
+
+        CurrentUser.CreateRegisterLogins();
 
         clsMainScreen::ShowMainMenue();
 

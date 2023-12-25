@@ -722,6 +722,20 @@ public:
 	{
 		return ValidateDate(*this);
 	}
+
+	static string GetDateString()
+	{
+		time_t t = time(0); // get time now
+		tm* now = localtime(&t);
+		return to_string(now->tm_mday) + "/" + to_string(now->tm_mon + 1) + "/" + to_string(now->tm_year + 1900);
+	}
+
+	static string GetTimeNowString()
+	{
+		time_t t = time(0); // get time now
+		tm* now = localtime(&t);
+		return to_string(now->tm_hour) + ":" + to_string(now->tm_min) + ":" + to_string(now->tm_sec);
+	}
 };
 
 
