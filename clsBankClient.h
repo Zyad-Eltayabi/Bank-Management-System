@@ -7,7 +7,7 @@
 #include "clsString.h"
 #include "clsInputValidate.h"
 #include "clsUtility.h"
-
+#include "Global.h"
 using namespace std;
 
 
@@ -147,6 +147,12 @@ private:
 				vClientsDateLine.push_back(ClientLine);
 		}
 		_SaveClientsDataAfterDeleting(vClientsDateLine);
+	}
+
+	string _CreateTransferLogLine(clsBankClient ClientToTransferTo, float TransferAmount)
+	{
+		return clsDate::GetDateString() + " - " + clsDate::GetTimeNowString() + "#//#" + _AccountNumber + "#//#" + ClientToTransferTo.GetAccountNumber() + "#//#"
+			+ to_string(TransferAmount) + "#//#" + to_string(_AccountBalance) + "#//#" + to_string(ClientToTransferTo.AccountBalance) + "#//#" + CurrentUser.UserName;
 	}
 
 public:
@@ -443,9 +449,23 @@ public:
 		}
 	}
 
+	void CreateTransferLog(clsBankClient ClientToTransferTo, float TransferAmount)
+	{
+		fstream Myfile;
+		Myfile.open("TransferLog.txt", ios::out | ios::app);
+		if (Myfile.is_open())
+		{
+			string Line = _CreateTransferLogLine(ClientToTransferTo, TransferAmount);
+			Myfile << Line << endl;
+		}
+		Myfile.close();
+	}
+
 	void Transfer(clsBankClient& ClientToTransferTo, float TransferAmount)
 	{
 		cout << Withdraw(TransferAmount);
 		ClientToTransferTo.Deposit(TransferAmount);
+		CreateTransferLog(ClientToTransferTo, TransferAmount);
 	}
+
 };
