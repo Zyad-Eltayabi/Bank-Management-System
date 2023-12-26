@@ -90,7 +90,6 @@ private:
 	static void _Logout()
 	{
 		CurrentUser = clsUser::Find("", "");
-		//clsLoginScreen::ShowLoginScreen();
 	}
 
 	static void _PerfromMainMenueOption(enMainMenueOptions MainMenueOptions)

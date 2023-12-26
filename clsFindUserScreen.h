@@ -19,7 +19,7 @@ private:
         cout << "\nEmail       : " << User.Email;
         cout << "\nPhone       : " << User.Phone;
         cout << "\nUserName    : " << User.UserName;
-        cout << "\nPassword    : " << User.Password;
+        cout << "\nPassword    : " << clsUtil::DecryptText(User.Password,19);
         cout << "\nPermissions : " << User.Permissions;
         cout << "\n___________________\n";
 

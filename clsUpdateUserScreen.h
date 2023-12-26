@@ -27,6 +27,7 @@ private:
 
         cout << "\nEnter Password: ";
         User.Password = clsInputValidate::ReadString();
+        User.Password = clsUtil::EncryptText(User.Password, 19);
 
         cout << "\nEnter Permission: ";
         User.Permissions = _ReadPermissionsToSet();
