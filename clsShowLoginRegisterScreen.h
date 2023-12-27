@@ -39,7 +39,8 @@ private:
 		cout << setw(8) << left << "" << "| " << setw(30) << left << Register[0];
 		cout << "| " << setw(25) << left << Register[1];
 		cout << "| " << setw(25) << left << Register[2];
-		cout << "| " << setw(25) << left << Register[3] << endl;
+		cout << "| " << setw(25) << left << Register[3];
+		cout << endl;
 	}
 
 	static void _PrintRegisterScreenBody(vector <string>& Registers)
