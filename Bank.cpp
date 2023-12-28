@@ -7,8 +7,7 @@ using namespace std;
 
 int main()
 {
-	while (true)
-	{
+	
 		clsLoginScreen::ShowLoginScreen();
-	}
+	
 }

@@ -52,6 +52,8 @@ private:
 		CurrentUser.CreateRegisterLogins();
 
 		clsMainScreen::ShowMainMenue();
+
+		clsLoginScreen::ShowLoginScreen();
 	}
 
 public:
