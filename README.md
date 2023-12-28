@@ -5,10 +5,7 @@
 
 ### Screenshots
 <div>
-<img src = "src/main screen.png" width = "400">
-<img src = "src/transactions screen.png" width = "400">
-<img src = "src/manage screen.png" width = "400">
-<img src = "src/login screen.png" width = "400">
+<img src = "Debug/Screenshot 2023-12-28 112030.png" width = "600">
 </div>
 
 ### Description
