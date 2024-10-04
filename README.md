@@ -1,14 +1,15 @@
-# Bank System
+<h1 align="center" id="title">Bank Management System</h1>
 
-#### simple bank management system implemented using the C++ programming language. The system provides various services, such as managing customer information, conducting financial transactions, and user management. The system consists of several screens, including the main screen, user management screen, and transaction screens.
+<h2>🚀 Overview</h2>
+<p>The Bank Management System is a comprehensive system designed to manage users, customers, and a wide range of financial transactions, including withdrawals, deposits, and transfers between accounts. The system also features an integrated currency converter, allowing users to seamlessly calculate and convert money between different currencies. Additionally, the project includes functionalities for user authentication, customer account management, transaction tracking, and real-time updates on account balances.</p>
 <hr>
 
-### Screenshots
+<h2> 📷 Project Screenshots:</h2>
 <div>
-<img src = "Debug/Screenshot 2023-12-28 112030.png" width = "600">
+<img src = "Debug/Screenshot 2023-12-28 112030.png" width = "100%">
 </div>
 
-### Description
+<h2>⭐ Description</h2>
 
 #### Main Screen :
 - The main screen provides options to display customer lists, add new customers, delete customers, update customer information, search for customers, conduct transactions, manage users, and log out.
@@ -56,18 +57,22 @@
 
 - The program reads and writes user and customer data to files using file handling operations.
 
-#### Usage Instructions :
-
-1. Run the program.
-2. Log in using a valid username and password. (username : user1 & pass : z1234)
-3. Navigate through the menu options to perform the desired operations.
-
-#### Notes :
+#### Error Handling :
 
 - The system includes error handling for incorrect user data input and limited access based on user permissions.
-  
-<hr>
 
-#### Find a bug ?
+<h2> 🛠️ Usage Instructions :</h2> 
+
+1. Run the program.
+2. Log in using a valid username and password. (username : user1 & pass : 1234)
+3. Navigate through the menu options to perform the desired operations.
+
+
+<h2>🎬 Watch the Demo Video! </h2>
+
+<p>Take a moment to explore the demo video, where I calmly give you a simple overview of how everything works. </p>
+<p> - Watch it on Google Drive : https://drive.google.com/file/d/1oCsfN5r368KPfqM01zAMo4vLvPy9uEk6/view?usp=sharing </p>
+
+<h2> Find a bug ?</h2>
 If you find a problem with the application, please contact me via email:
 [ZyadEltayibi@gmail.com](ZyadEltayibi@gmail.com)
