@@ -73,6 +73,3 @@
 <p>Take a moment to explore the demo video, where I calmly give you a simple overview of how everything works. </p>
 <p> - Watch it on Google Drive : https://drive.google.com/file/d/1oCsfN5r368KPfqM01zAMo4vLvPy9uEk6/view?usp=sharing </p>
 
-<h2> Find a bug ?</h2>
-If you find a problem with the application, please contact me via email:
-[ZyadEltayibi@gmail.com](ZyadEltayibi@gmail.com)
